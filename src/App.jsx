@@ -1,24 +1,22 @@
 import { useState } from 'react'
 import {Nav} from './assets/components/nav'
 import { Dialog } from './assets/components/dialog'
-import { TodoCard } from './assets/components/todoCard'
+
+import { Todolist } from './assets/components/Todolist'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
-  const [todo, setTodo] = useState([{
-    title: "",
-    desc: ""
-  }])
+  const [todo, setTodo] = useState([])
 
   console.log(todo)
 
   return (
-    <div className='w-full h-screen bg-black'>
+    <div className='w-full h-[200vh] bg-black'>
      <Nav />
      <Dialog setTodo={setTodo} />
-
+      <Todolist todo={todo} />
      
     </div>
   )

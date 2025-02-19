@@ -16,7 +16,7 @@ export const Dialog = ({setTodo}) => {
 
   return (
     <>
-        <div className='bg-[#D9D9D9] w-[90%] h-2/4 w-full max-w-7xl mx-auto text-3xl  items-center justify-center  p-6 rounded-2xl mt-9'>
+        <div className='bg-[#D9D9D9] w-[90%] h-1/4 w-full max-w-7xl mx-auto text-3xl  items-center justify-center  p-6 rounded-2xl mt-9'>
             <h1 className='text-3xl'>Title</h1>
         
             <input ref={titleRef} onChange={()=>setTitle(titleRef.current.value)} className=" text-2xl w-3XS border-2 border-gray-400 rounded-2xl p-0.5 pl-3 mt-4" type="text" placeholder='Title' />
